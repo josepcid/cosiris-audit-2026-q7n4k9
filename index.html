@@ -286,12 +286,16 @@
     margin-bottom: 14px; display: block;
   }
   .callout h4 {
-    color: var(--ink) !important;
+    color: var(--ink);
     font-family: 'Cabinet Grotesk', sans-serif !important;
     font-size: 24px !important; font-weight: 600 !important;
-    text-transform: none !important; letter-spacing: -0.02em !important;
+    line-height: 1.15 !important;
+    text-transform: none !important; letter-spacing: -0.025em !important;
     margin: 0 0 16px !important;
   }
+  .callout.alert h4 { color: var(--white); }
+  .callout.green h4 { color: var(--ink); }
+  .callout.warn h4 { color: var(--ink); }
   .callout p { margin-bottom: 14px; }
   .callout p:last-child { margin-bottom: 0; }
   .callout ul { margin: 12px 0; }
