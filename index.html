@@ -662,9 +662,22 @@
 
     <div class="callout">
       <span class="callout-label"><span class="sev medio">Medio</span> Hallazgo #8</span>
-      <h4>100% del spend va a Lead Forms (Instant Form), 0% a landing+pixel.</h4>
-      <p>No se está testeando la alternativa de mandar tráfico a una landing propia con formulario nativo y píxel server-side (CAPI). Lead Forms suelen dar leads más baratos pero de <strong>peor calidad</strong> — tasa de cualificación SQL más baja.</p>
-      <p>Si los CPL de Instant Form parecen buenos pero las inmobiliarias clientes se quejan de leads fríos / no contestan, esto es la causa probable. Hay que medirlo en CRM, no solo en Ads Manager.</p>
+      <h4>Las campañas Landing+Pixel se probaron y se abandonaron sin datos accesibles.</h4>
+      <p>En la cuenta hay <strong>cinco campañas con objetivo Tráfico/Landing</strong> — todas inactivas a día de hoy:</p>
+      <ul>
+        <li><span class="mono">Tráfico - Captación Inmobiliarias</span> · sin gasto</li>
+        <li><span class="mono">Cosiris - Tráfico</span> · sin gasto</li>
+        <li><span class="mono">B2B_Tráfico_Landing_Farlete</span> · sin gasto</li>
+        <li><span class="mono">B2C_Landing vendedores_Farlete</span> · sin gasto</li>
+        <li><span class="mono">B2B_LANDING pixel insertado(FARLETE)</span> · €34 / 1 lead / CPL €34 vía <span class="mono">fb_pixel_lead</span></li>
+      </ul>
+      <p>Es decir: la alternativa de landing propia + píxel server-side <strong>se ha intentado y se ha apagado</strong>. La pregunta clave no es "¿deberíais probarla?" sino "¿por qué la abandonasteis?". Las posibilidades:</p>
+      <ul>
+        <li><strong>Tactical</strong> — mala landing, mal píxel, mal CAPI, mal copy. Reabordable con buena ejecución.</li>
+        <li><strong>Estratégico</strong> — la calidad del lead landing era similar a Instant Form pero con más coste y complejidad. Decisión cerrada.</li>
+        <li><strong>Inercia</strong> — alguien lo lanzó, no funcionó al primer intento, y nadie volvió a tocarlo. Lo más común.</li>
+      </ul>
+      <p>El ~96% del spend activo va hoy a Instant Form (Lead Forms de Meta), que tiende a dar leads más baratos pero de peor calidad SQL. Sin saber por qué se abandonó la línea Landing, no se puede decidir si conviene retomarla. Quick win 8 propone recuperar ese contexto antes de cualquier nueva inversión en landing.</p>
     </div>
 
     <div class="callout">
@@ -789,7 +802,7 @@
       <li><strong>Consolidar evento "Lead" único en cada funnel.</strong> Eliminar la coexistencia de <span class="mono">leadgen.other</span> + <span class="mono">lead</span> + <span class="mono">fb_pixel_lead</span> y unificar a un evento por avatar.</li>
       <li><strong>Limpiar las 8 campañas zombie.</strong> Archivado bulk de pausadas e inactivas con cero gasto reciente. 30 minutos.</li>
       <li><strong>Ampliar audiencia B2B Cosiris.</strong> Lookalike 1% sobre clientes activos del SaaS, interest expansion ON, ampliar geo y rango de edad para refrescar la pool antes que la frecuencia 4,44 se vuelva 6+.</li>
-      <li><strong>Test pequeño landing+pixel B2B.</strong> 20% del presupuesto B2B durante 2 semanas a una landing propia con formulario nativo y CAPI. Comparar CPL pero <strong>sobre todo cualidad del lead a nivel CRM</strong>, no solo a nivel Ads Manager.</li>
+      <li><strong>Recuperar contexto del abandono de Landing+Pixel.</strong> En la cuenta hay 5 campañas Landing/Tráfico inactivas (la única con datos: <span class="mono">B2B_LANDING pixel insertado(FARLETE)</span> con CPL €34 sobre 1 sola conversión). Antes de retomar la línea, hablar con quien las apagó: ¿fue mala landing/píxel/CAPI (tactical → reabordable) o calidad de lead equivalente con más coste (estratégico → respetar)? Solo si fue tactical, relanzar con landing nueva en 20% del presupuesto B2B durante 2 semanas, midiendo cualidad SQL en CRM y no solo CPL en Ads Manager.</li>
     </ol>
 
     <div class="callout">
