@@ -505,10 +505,10 @@
     </ul>
     <p><strong>Cómo se arregla:</strong> cada inmobiliaria cliente, su propio Business Manager y su propia cuenta publicitaria, con su billing a su nombre. Cosiris entra como Partner del BM del cliente. El píxel B2C compartido se gestiona desde una cuenta vuestra matriz y se conecta a las cuentas de los clientes vía dataset compartido — eso permite mantener la jugada de píxel común sin que el spend ni la propiedad pase por vuestra cuenta.</p>
 
-    <h3>3. Account hygiene</h3>
-    <p>Mucho ad y adset pausado, archivado o no_delivering conviviendo con el activo. Varias convenciones de naming distintas en la cuenta — algunas con NIF como prefijo, otras con fecha al inicio, otras con descripción libre. A escala pequeña no se nota. Cuanto más crezca el número de clientes en gestión, más doloroso se vuelve auditar la cuenta y generar reportes mensuales por cliente.</p>
-    <p>Esto es ruido operativo, no problema estratégico. Pero hace que las dos cosas anteriores sean más caras de resolver de lo que deberían ser. Y a futuro, la curva de onboarding de cualquier persona nueva al equipo será mucho más larga que necesario.</p>
-    <p><strong>Cómo se arregla:</strong> archivado bulk del cementerio (30-60 minutos), naming convention oficial documentada (2 horas), y un proceso de cierre de campañas que evite acumular zombies a futuro.</p>
+    <h3>3. Naming convention sin estandarizar</h3>
+    <p>Conviven varias convenciones de naming distintas en la cuenta — algunas con NIF como prefijo, otras con fecha al inicio, otras con descripción libre. A escala pequeña no se nota. Cuanto más crezca el número de clientes en gestión, más doloroso se vuelve auditar la cuenta y generar reportes mensuales por cliente — y la curva de onboarding de cualquier persona nueva al equipo se alarga sin necesidad.</p>
+    <p>Esto es ruido operativo, no problema estratégico. Pero hace que las dos cosas anteriores sean más caras de resolver de lo que deberían ser.</p>
+    <p><strong>Cómo se arregla:</strong> una naming convention oficial documentada (2 horas) y un mini manual operativo que la mantenga viva cuando entren clientes nuevos.</p>
   </div>
 </section>
 
@@ -520,9 +520,8 @@
     <p class="lead">Esto es una mirada de pre-venta — el bosquejo del problema, no el plan de migración. Tres cosas se pueden hacer ya. El resto da para conversación.</p>
 
     <h3>Lo barato y útil ya</h3>
-    <p>Tres acciones que el equipo interno puede ejecutar esta misma semana, sin esperar a ninguna decisión sobre arquitectura:</p>
+    <p>Dos acciones que el equipo interno puede ejecutar esta misma semana, sin esperar a ninguna decisión sobre arquitectura:</p>
     <ol class="numbered">
-      <li><strong>Limpiar el cementerio.</strong> Archivado bulk de los ads y adsets pausados/no_delivering con cero gasto reciente. 30-60 minutos. Resultado: Ads Manager ligero y reportes futuros más rápidos.</li>
       <li><strong>Documentar la naming convention oficial.</strong> Una hoja con el patrón "qué es vuestro" vs "qué es de cliente", cómo se nombran campañas/adsets/ads, prefijos por estado (TEST, OFF, EXP). 2 horas.</li>
       <li><strong>Auditoría exprés del Events Manager.</strong> Cuántos píxeles y datasets tenéis, qué eventos están registrados, EMQ score, CAPI activo, doble disparo. Es el preámbulo necesario antes de cualquier decisión sobre separación de píxeles.</li>
     </ol>
