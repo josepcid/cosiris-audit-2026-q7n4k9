@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Cosiris · Auditoría cuenta publicitaria</title>
-<meta name="description" content="Diagnóstico estructural de la cuenta publicitaria Cosiris. 30 días, €15.538 invertidos, 9 hallazgos críticos.">
+<meta name="description" content="Diagnóstico de cuenta publicitaria Cosiris. La línea entre vuestras campañas y las de vuestros clientes inmobiliarios.">
 <meta name="robots" content="noindex, nofollow">
 <link rel="preconnect" href="https://api.fontshare.com">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -45,7 +45,6 @@
   }
   .container { max-width: 980px; margin: 0 auto; padding: 0 48px; }
 
-  /* HERO */
   .hero { border-bottom: 1px solid var(--line); padding: 80px 0 60px; }
   .hero-meta {
     display: flex; justify-content: space-between;
@@ -54,9 +53,7 @@
     color: var(--ink-faint); margin-bottom: 60px;
   }
   .hero-meta .left { color: var(--ink); }
-  .hero-meta .left::before {
-    content: "●"; color: var(--ink); margin-right: 8px;
-  }
+  .hero-meta .left::before { content: "●"; color: var(--ink); margin-right: 8px; }
   .hero h1 {
     font-family: 'Cabinet Grotesk', sans-serif; font-weight: 600;
     font-size: clamp(48px, 7vw, 92px);
@@ -91,7 +88,6 @@
     letter-spacing: -0.005em;
   }
 
-  /* INDEX */
   .index { padding: 60px 0; border-bottom: 1px solid var(--line-soft); }
   .index-title {
     font-family: 'Special Elite', monospace; font-size: 12px;
@@ -115,15 +111,12 @@
     flex: 1; transition: color 0.2s, background 0.2s;
     padding: 0 4px;
   }
-  .index li a:hover {
-    background: var(--hl);
-  }
+  .index li a:hover { background: var(--hl); }
   .index li .pages {
     font-family: 'Special Elite', monospace; font-size: 11px;
     color: var(--ink-faint);
   }
 
-  /* SECTIONS */
   section { padding: 80px 0 60px; border-bottom: 1px solid var(--line-soft); }
   .section-num {
     font-family: 'Special Elite', monospace; font-size: 12px;
@@ -187,7 +180,6 @@
     color: var(--ink-faint); top: 14px;
   }
 
-  /* STATS GRID */
   .stats-grid {
     display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 0; margin: 48px 0; border: 1px solid var(--line);
@@ -214,7 +206,6 @@
     color: var(--ink-faint);
   }
 
-  /* PULL QUOTE */
   .pull {
     border-top: 2px solid var(--ink); border-bottom: 2px solid var(--ink);
     padding: 56px 0; margin: 60px 0; text-align: center;
@@ -231,7 +222,6 @@
     padding: 0 0.18em;
   }
 
-  /* TABLE */
   .data-table {
     width: 100%; border-collapse: collapse;
     margin: 24px 0 40px; font-size: 14px;
@@ -261,7 +251,6 @@
   .good { color: var(--green); font-weight: 700; }
   .warn { color: #c89020; font-weight: 700; }
 
-  /* CALLOUTS */
   .callout {
     border: 1px solid var(--line-soft); padding: 32px;
     margin: 32px 0; background: var(--paper);
@@ -313,7 +302,6 @@
   .callout.alert .callout-mini-table td { color: var(--white); }
   .callout-mini-table tr:last-child td { border-bottom: none; }
 
-  /* SEVERITY BADGE */
   .sev {
     display: inline-block; padding: 4px 10px; margin-right: 8px;
     font-family: 'Special Elite', monospace; font-size: 10px;
@@ -323,28 +311,6 @@
   .sev.alto { background: var(--hl-deep); color: var(--ink); }
   .sev.medio { background: var(--ink-faint); color: var(--bg); }
 
-  /* TIMELINE */
-  .timeline { margin: 32px 0; border-left: 2px solid var(--ink); padding-left: 0; }
-  .timeline-item { padding: 0 0 32px 32px; position: relative; }
-  .timeline-item::before {
-    content: ""; width: 12px; height: 12px;
-    background: var(--hl); border: 2px solid var(--ink);
-    border-radius: 50%; position: absolute;
-    left: -7px; top: 6px;
-  }
-  .timeline-item h5 {
-    font-family: 'Cabinet Grotesk', sans-serif; font-size: 22px;
-    font-weight: 600; margin-bottom: 4px;
-    letter-spacing: -0.02em; color: var(--ink);
-  }
-  .timeline-item .meta {
-    font-family: 'Special Elite', monospace; font-size: 11px;
-    color: var(--ink-faint); text-transform: uppercase;
-    letter-spacing: 1.5px; margin-bottom: 12px;
-  }
-  .timeline-item p { margin-bottom: 8px; }
-
-  /* QUESTION BLOCK */
   .question {
     border-left: 3px solid var(--ink);
     padding: 16px 0 16px 24px;
@@ -363,7 +329,6 @@
   }
   .question p { font-size: 15px; color: var(--ink-soft); margin: 0; max-width: none; }
 
-  /* FOOTER */
   footer {
     padding: 80px 0 60px; text-align: center;
     border-top: 2px solid var(--ink);
@@ -383,11 +348,8 @@
     font-size: 12px; color: #888;
     text-transform: uppercase; letter-spacing: 2px;
   }
-  footer .signature::before {
-    content: "—"; margin-right: 12px;
-  }
+  footer .signature::before { content: "—"; margin-right: 12px; }
 
-  /* UTILS */
   .small { font-size: 13px; color: var(--ink-soft); }
   .mono { font-family: 'Special Elite', monospace; font-size: 13px; }
   .nowrap { white-space: nowrap; }
@@ -411,11 +373,11 @@
 <header class="hero">
   <div class="container">
     <div class="hero-meta">
-      <span class="left">Confidencial · Diagnóstico estructural</span>
-      <span>Abril 2026 / V.1 auditoría inicial</span>
+      <span class="left">Confidencial · Diagnóstico inicial</span>
+      <span>Abril 2026 / V.2 auditoría inicial</span>
     </div>
-    <h1>Cosiris.<br>Auditoría de cuenta,<br><span class="hl">arquitectura primero</span>.</h1>
-    <p class="hero-subtitle">30 días de inversión publicitaria analizados. €15.538 destinados a una cuenta que mezcla cinco audiencias incompatibles bajo un único píxel. Lo que parece un problema de optimización es, en realidad, un problema de arquitectura — y se está pagando en euros cada día.</p>
+    <h1>Cosiris.<br>Vuestras campañas y<br><span class="hl">las de vuestros clientes</span>.</h1>
+    <p class="hero-subtitle">30 días, €15.538 invertidos. Dos campañas son vuestras (captáis inmobiliarias para el SaaS — y van bien, ROAS 2x sobre primer pago). El resto, €11.400, son las campañas que vosotros gestionáis para 30+ inmobiliarias clientes, en vuestra propia cuenta y bajo vuestro mismo píxel. Eso es el diagnóstico.</p>
     <div class="hero-info">
       <div class="hero-info-item">
         <span class="label">Cliente</span>
@@ -426,12 +388,12 @@
         <span class="value">29 mar – 27 abr 2026</span>
       </div>
       <div class="hero-info-item">
-        <span class="label">Inversión analizada</span>
-        <span class="value">€15.538,25</span>
+        <span class="label">Inversión</span>
+        <span class="value">€15.538</span>
       </div>
       <div class="hero-info-item">
-        <span class="label">Hallazgos críticos</span>
-        <span class="value">9 (3 críticos · 3 altos · 3 medios)</span>
+        <span class="label">Inmobiliarias en cuenta</span>
+        <span class="value">30+ clientes operando</span>
       </div>
     </div>
   </div>
@@ -442,12 +404,10 @@
   <div class="container">
     <p class="index-title">Índice</p>
     <ol>
-      <li><a href="#tldr">TL;DR ejecutivo</a><span class="pages">4 min</span></li>
-      <li><a href="#raiz">El problema raíz · arquitectura, no optimización</a><span class="pages">7 min</span></li>
-      <li><a href="#hallazgos">Los 9 hallazgos · auditoría detallada</a><span class="pages">12 min</span></li>
-      <li><a href="#numeros">La cuenta en números</a><span class="pages">5 min</span></li>
-      <li><a href="#quickwins">Quick wins · esta semana sin migrar</a><span class="pages">5 min</span></li>
-      <li><a href="#plan">Plan de migración · arquitectura nueva</a><span class="pages">7 min</span></li>
+      <li><a href="#tldr">TL;DR ejecutivo</a><span class="pages">3 min</span></li>
+      <li><a href="#linea">La línea divisoria · vuestro vs vuestros clientes</a><span class="pages">5 min</span></li>
+      <li><a href="#hallazgos">Hallazgos críticos</a><span class="pages">7 min</span></li>
+      <li><a href="#quickwins">Quick wins · sin tocar arquitectura</a><span class="pages">3 min</span></li>
       <li><a href="#proximo">Próximos pasos</a><span class="pages">3 min</span></li>
     </ol>
   </div>
@@ -458,243 +418,52 @@
   <div class="container">
     <span class="section-num">01 — Resumen</span>
     <h2>TL;DR <span class="hl">ejecutivo</span>.</h2>
-    <p class="lead">Si solo lees una sección, que sea esta. Cinco frases que resumen 30 días de análisis y nueve hallazgos.</p>
+    <p class="lead">Lo bueno: vuestras propias campañas funcionan. Lo arriesgado: estáis haciendo de agencia para 30+ inmobiliarias dentro de vuestra propia cuenta y con vuestro mismo píxel.</p>
 
     <div class="callout alert">
-      <span class="callout-label">⚠ Hallazgo principal</span>
-      <h4>Tenéis un problema de arquitectura, no de optimización.</h4>
-      <p>La cuenta publicitaria de Cosiris mezcla <mark>cinco audiencias completamente distintas</mark> (inmobiliarias B2B, vendedores B2C, compradores B2C, arrendadores B2C, leads para inmobiliarias específicas) bajo un único píxel y con tres eventos de conversión diferentes simultáneamente.</p>
-      <p>Optimizar campañas mientras esa estructura existe es como afinar un piano desafinado de fábrica: cada esfuerzo se diluye en el problema raíz. La consecuencia económica ya se ve en la cuenta — el retargeting B2B sale más caro que el frío B2B. Eso solo ocurre cuando el píxel está envenenado.</p>
+      <span class="callout-label">⚠ Diagnóstico principal</span>
+      <h4>Vuestras campañas funcionan a pesar de la arquitectura, no gracias a ella.</h4>
+      <p>El <mark>ROAS 2× sobre primer pago</mark> de las campañas B2B (vuestras) es excelente. La cuenta no está rota — está rindiendo. Pero el 73% del spend va a campañas que no son vuestras: son de las inmobiliarias clientes a las que prestáis servicio, y están corriendo dentro de vuestra cuenta y bajo vuestro píxel.</p>
+      <p>Eso, hoy, no se nota porque genera leads. Mañana se nota cuando: un baneo de Meta os tira a 30 clientes a la vez, un cliente os pide sus datos al irse y no podéis dárselos limpios, queréis escalar vuestro propio funnel B2B y la señal del píxel está contaminada con público B2C, o un competidor pregunta a vuestros clientes "¿de quién es vuestro píxel?" y la respuesta es incómoda.</p>
     </div>
 
     <div class="stats-grid">
       <div class="stat">
-        <div class="stat-num">€15.538</div>
-        <div class="stat-label">invertidos en 30 días</div>
+        <div class="stat-num">€4.138</div>
+        <div class="stat-label">spend vuestras 2 campañas (27%)</div>
       </div>
       <div class="stat">
-        <div class="stat-num">866</div>
-        <div class="stat-label">leads totales (3 eventos distintos)</div>
+        <div class="stat-num"><span class="hl">€11.400</span></div>
+        <div class="stat-label">spend campañas de clientes (73%)</div>
       </div>
       <div class="stat">
-        <div class="stat-num"><span class="hl">5</span></div>
-        <div class="stat-label">audiencias bajo 1 solo píxel</div>
+        <div class="stat-num">30<small>+</small></div>
+        <div class="stat-label">inmobiliarias en vuestra cuenta</div>
       </div>
       <div class="stat">
-        <div class="stat-num">9</div>
-        <div class="stat-label">hallazgos accionables</div>
+        <div class="stat-num">1</div>
+        <div class="stat-label">píxel para los dos buyer personas</div>
       </div>
     </div>
 
-    <h3>Las cinco frases del informe</h3>
+    <h3>Las cuatro frases del informe</h3>
     <ol class="numbered">
-      <li><strong>El RTG B2B cuesta más que el frío B2B</strong> (€36,12 vs €14,32 CPL). Esto es matemáticamente imposible en una cuenta sana. Es la prueba forense del píxel contaminado, traducida directamente a euros.</li>
-      <li><strong>El presupuesto está invertido respecto a vuestro modelo de negocio.</strong> 67% va a generar leads para inmobiliarias clientes (servicio puntual), solo 26% a captar inmobiliarias para el SaaS Cosiris (core de margen recurrente).</li>
-      <li><strong>Hay una campaña parada con €3,46 CPL.</strong> La métrica más eficiente de toda la cuenta (B2C Compradores en estado <span class="mono">not_delivering</span>) está bloqueada. Desbloquearla es probablemente el primer quick win obvio.</li>
-      <li><strong>Tres eventos de conversión distintos compitiendo:</strong> <span class="mono">leadgen.other</span>, <span class="mono">lead</span>, <span class="mono">fb_pixel_lead</span>. Imposible tener un dashboard único de "leads totales" en Ads Manager sin reconciliación manual.</li>
-      <li><strong>La frecuencia B2B ya está en 4,44</strong> con audiencia de 58k personas. La pool core de inmobiliarias se está saturando. Si subís presupuesto B2B sin ampliar audiencia o rotar creativos, el CPL se deteriora el mes que viene.</li>
+      <li><strong>Vuestras 2 campañas (B2B-COSIRIS) van bien.</strong> ROAS 2× sobre primer pago es excelente. Aquí no hay urgencia, hay potencial de escala — siempre que el píxel esté limpio.</li>
+      <li><strong>Las 30+ inmobiliarias clientes operando en vuestra cuenta es el problema estructural real.</strong> Os hace agencia operativa pero sin la separación que protege a una agencia: cada cliente debería tener su propio Business Manager y su propia cuenta publicitaria, con vosotros entrando como Partner.</li>
+      <li><strong>El píxel compartido entre todas las inmobiliarias clientes es jugada correcta</strong> — comparten buyer persona (vendedor/comprador de casa). Pero ese píxel no debería ser el mismo que el vuestro de captar inmobiliarias. Buyer persona radicalmente distinto: CEO de inmobiliaria vs propietario que vende su piso.</li>
+      <li><strong>El operativo está al borde del techo de manejabilidad</strong>: 671 ads totales, 80% en cementerio, 6 convenciones de naming conviviendo. Auditar y reportar a 30 clientes a esta escala con esta hygiene es físicamente imposible.</li>
     </ol>
   </div>
 </section>
 
-<!-- PROBLEMA RAÍZ -->
-<section id="raiz">
+<!-- LÍNEA DIVISORIA -->
+<section id="linea">
   <div class="container">
-    <span class="section-num">02 — Diagnóstico estructural</span>
-    <h2>El problema raíz: <span class="hl">arquitectura</span>, no optimización.</h2>
-    <p class="lead">Cinco audiencias, un píxel, una cuenta, tres eventos de conversión. La cuenta publicitaria de Cosiris está construida como si los cinco públicos compartieran intención. No la comparten — y el algoritmo lo sabe.</p>
+    <span class="section-num">02 — La línea divisoria</span>
+    <h2>Vuestras campañas,<br>y <span class="hl">las de vuestros clientes</span>.</h2>
+    <p class="lead">Antes de cualquier recomendación, la separación que cambia toda la lectura: qué campañas son del SaaS Cosiris (vuestras) y qué campañas son la operativa de agencia para inmobiliarias clientes (suyas).</p>
 
-    <h3>Las cinco audiencias mezcladas</h3>
-    <p>Las campañas activas e inactivas con tracking en la cuenta hablan a cinco perfiles radicalmente distintos:</p>
-    <ol class="numbered">
-      <li><strong>Inmobiliarias</strong> (clientes potenciales del SaaS Cosiris) — campaña <span class="mono">AON_PROS_B2B-COSIRIS_ES_FORM</span></li>
-      <li><strong>Vendedores de vivienda</strong> (servicio para inmobiliarias clientes) — campaña <span class="mono">AON_PROS_B2C-VENDEDORES_ES_FORM</span></li>
-      <li><strong>Compradores</strong> — campaña <span class="mono">20260412_PROS_B2C-COMPRADORES_ES_FORM</span></li>
-      <li><strong>Arrendadores</strong> — campaña <span class="mono">20260412_PROS_B2C-ARRENDADORES_ES_FORM</span></li>
-      <li><strong>Leads para inmobiliarias específicas</strong> (Don Piso, Best House, Alfa Urban, Farlete) — varias campañas individuales</li>
-    </ol>
-    <p>CEO de inmobiliaria, propietario que vende, comprador, arrendatario y lead específico de marca. Cinco perfiles con demografía, intención de búsqueda, lenguaje y buyer journey completamente distintos. El píxel los recibe todos como si fueran "leads" indiferenciados y los promedia. El resultado es un modelo predictivo que no representa bien a ninguno.</p>
-
-    <h3>Por qué esto duele económicamente</h3>
-    <ul>
-      <li><strong>Lookalikes contaminadas:</strong> cualquier audiencia similar generada a partir de este píxel mezcla CEOs de inmobiliarias con propietarios de 65 años que quieren vender el piso de la abuela. Inservible para escalar.</li>
-      <li><strong>Audiencias custom y RTG cruzadas:</strong> el RTG B2B sale más caro que el frío B2B porque su pool incluye tráfico B2C que jamás convertirá a B2B. Es el síntoma más nítido del problema.</li>
-      <li><strong>CBO desorientado:</strong> con cinco señales conflictivas, la distribución automática de presupuesto entre adsets toma decisiones contradictorias.</li>
-      <li><strong>Atribución imposible de consolidar:</strong> tres eventos distintos disparándose, ninguno ofrece la "verdad" del total real de leads cualificados.</li>
-      <li><strong>Riesgo concentrado de baneo:</strong> si Meta marca una campaña B2C agresiva, puede arrastrar la cuenta entera y dejar parada también la inversión B2B core.</li>
-    </ul>
-
-    <h3>El marco correcto: un píxel por avatar</h3>
-    <p>Un píxel no se separa por cliente, se separa por <strong>avatar</strong> (perfil objetivo). Si dos campañas hablan al mismo perfil — mismo intent, mismo funnel, mismo tipo de conversión — pueden compartir píxel, y de hecho conviene, porque acumular señal en el mismo perfil acelera el aprendizaje del algoritmo. Si difieren en cualquiera de los tres ejes, deben separarse.</p>
-
-    <p>Aplicado a Cosiris, la separación correcta queda así:</p>
-
-    <table class="data-table">
-      <thead>
-        <tr>
-          <th>Avatar</th>
-          <th>Píxel</th>
-          <th>Justificación</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><strong>Inmobiliarias</strong> (B2B Cosiris SaaS)</td>
-          <td>Píxel A — propio</td>
-          <td>Intent profesional, decisión racional, ciclo largo</td>
-        </tr>
-        <tr>
-          <td><strong>Vendedores de vivienda</strong> (B2C)</td>
-          <td>Píxel B — compartido entre todas las inmobiliarias clientes</td>
-          <td>Mismo perfil base, diferenciación a nivel cuenta y creativo</td>
-        </tr>
-        <tr>
-          <td><strong>Compradores de vivienda</strong> (B2C)</td>
-          <td>Píxel C — propio</td>
-          <td>Avatar y journey distintos a vendedor</td>
-        </tr>
-        <tr>
-          <td><strong>Arrendadores</strong> (B2C)</td>
-          <td>Píxel D — propio</td>
-          <td>Avatar y journey distintos al resto</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <p>Cuatro píxeles bien definidos en lugar del único píxel-cajón-de-sastre actual.</p>
-
-    <div class="callout green">
-      <span class="callout-label">Matiz importante</span>
-      <h4>El píxel compartido entre inmobiliarias clientes es ventaja, no problema.</h4>
-      <p>Si todas las inmobiliarias atacan el mismo perfil ("propietario español queriendo vender"), compartir píxel multiplica la densidad de señal y acelera el aprendizaje. Es la jugada correcta en plataformas verticales.</p>
-      <p>La diferenciación se hace a nivel <strong>cuenta publicitaria</strong> (cada inmobiliaria con la suya, con su billing, su acceso, su dominio), no a nivel píxel. Cuenta separada protege facturación, propiedad de datos y riesgo de baneo. Píxel compartido protege el aprendizaje del algoritmo.</p>
-    </div>
-  </div>
-</section>
-
-<!-- PULL QUOTE -->
-<div class="container">
-  <div class="pull">
-    <p>No es un problema<br>de optimización.<br>Es un problema <span class="hl">de arquitectura</span>.</p>
-  </div>
-</div>
-
-<!-- HALLAZGOS -->
-<section id="hallazgos">
-  <div class="container">
-    <span class="section-num">03 — Auditoría detallada</span>
-    <h2>Los <span class="hl">9 hallazgos</span><br>por orden de severidad.</h2>
-    <p class="lead">Tres críticos: explican por qué la cuenta no escala. Tres altos: aceleran el deterioro si no se tocan. Tres medios: acumulativos, fáciles de resolver una vez detectados.</p>
-
-    <div class="callout alert">
-      <span class="callout-label"><span class="sev">Crítico</span> Hallazgo #1</span>
-      <h4>El RTG B2B sale más caro que el frío B2B.</h4>
-      <table class="callout-mini-table">
-        <tr><td>AON_PROS_B2B-COSIRIS <span class="mono">(frío)</span></td><td class="num">€14,32 CPL</td><td class="num">279 leads</td><td class="num">€3.994</td></tr>
-        <tr><td>AON_RTG_B2B-COSIRIS <span class="mono">(retargeting)</span></td><td class="num"><mark>€36,12 CPL</mark></td><td class="num">4 leads</td><td class="num">€144</td></tr>
-      </table>
-      <p>En cualquier cuenta sana, el retargeting es entre un 30% y 60% <strong>más barato</strong> que el frío. Aquí el RTG cuesta <strong>2,5× más</strong> que el frío. Esto solo puede ocurrir si la audiencia de RTG está envenenada con tráfico que no es B2B real — visitas B2C que aterrizaron en páginas B2B porque el píxel mezcla audiencias.</p>
-      <p>La pool de RTG, en lugar de ser "gente caliente que casi compra", es ruido demográfico. Es la prueba forense más nítida del píxel contaminado y se traduce a euros desperdiciados cada día que la cuenta sigue con esta arquitectura.</p>
-    </div>
-
-    <div class="callout alert">
-      <span class="callout-label"><span class="sev">Crítico</span> Hallazgo #2</span>
-      <h4>"Multiple attribution settings" en 3 de 4 campañas activas.</h4>
-      <p>El export confirma que las campañas <span class="mono">AON_PROS_B2C-VENDEDORES</span>, <span class="mono">AON_PROS_B2B-COSIRIS</span> y <span class="mono">AON_RTG_B2B-COSIRIS</span> operan con "Multiple attribution settings" — igual que el total agregado de la cuenta.</p>
-      <p>Significa que dentro de una misma campaña conviven adsets con ventanas de atribución distintas (típicamente 7-day click vs 1-day click vs alguna variante con view). <strong>Imposible comparar campaña vs campaña con criterio único.</strong> Un CPL de €19 en una campaña no es comparable con un CPL de €14 de otra si las ventanas no coinciden.</p>
-      <p>Síntoma típico: varias manos han tocado la cuenta sin un manual operativo. Ningún reporte ejecutivo es fiable hasta que esto se homogeneice.</p>
-    </div>
-
-    <div class="callout alert">
-      <span class="callout-label"><span class="sev">Crítico</span> Hallazgo #3</span>
-      <h4>Hay una campaña con €3,46 CPL parada.</h4>
-      <p>La campaña <span class="mono">20260412_PROS_B2C-COMPRADORES_ES_FORM</span> aparece en estado <span class="mono">not_delivering</span>. En 30 días generó 11 leads con €38 de gasto, dando un <mark>CPL de €3,46 — la métrica más eficiente de toda la cuenta, casi 5× mejor que la principal</mark>.</p>
-      <p>Está parada por algún motivo que no se ve en el export: presupuesto agotado, creativo rechazado por política, problema de píxel, audiencia agotada. Diagnosticar y desbloquear esa campaña es probablemente el primer quick win de la cuenta. Si escala con esa eficiencia, mueve la aguja del coste medio entero.</p>
-    </div>
-
-    <h3>Hallazgos altos</h3>
-
-    <div class="callout warn">
-      <span class="callout-label"><span class="sev alto">Alto</span> Hallazgo #4</span>
-      <h4>Frecuencia B2B en 4,44 con pool de 58k personas.</h4>
-      <p>La audiencia core de inmobiliarias en España (CEO/gerente de inmobiliaria) está saturándose: <strong>4,4 impresiones por persona en 30 días</strong>. Si se aumenta el presupuesto B2B sin ampliar la pool — interest expansion, lookalikes nuevas, creativos rotando — el CPL se dispara el mes que viene. Mes que viene = consolidación del problema, no solución.</p>
-    </div>
-
-    <div class="callout warn">
-      <span class="callout-label"><span class="sev alto">Alto</span> Hallazgo #5</span>
-      <h4>Distribución de presupuesto desalineada con el modelo de negocio.</h4>
-      <table class="callout-mini-table">
-        <tr><td>B2C Vendedores (servicio para clientes externos)</td><td class="num"><strong>67,4%</strong> · €10.475</td></tr>
-        <tr><td>B2B Cosiris (SaaS, core recurrente)</td><td class="num">25,7% · €3.994</td></tr>
-        <tr><td>Resto (test, RTG, individuales)</td><td class="num">~6,9% · €1.069</td></tr>
-      </table>
-      <p>Pregunta directa para el CEO: <strong>¿generar leads para inmobiliarias clientes deja más margen recurrente que captar nuevas inmobiliarias para el SaaS?</strong></p>
-      <p>Si el SaaS tiene LTV recurrente y el servicio de leads tiene margen menor (o es coste-pasa-cliente), la distribución debería estar invertida. Si la inversión 67/26 actual es intencional, debería tener números detrás. Si no lo es, es deriva operativa que está consumiendo presupuesto del producto core.</p>
-    </div>
-
-    <div class="callout warn">
-      <span class="callout-label"><span class="sev alto">Alto</span> Hallazgo #6</span>
-      <h4>Tres eventos de conversión distintos compitiendo.</h4>
-      <ul>
-        <li><span class="mono">leadgen.other</span> — Instant Form de Meta, usado en B2C</li>
-        <li><span class="mono">lead</span> — evento estándar de Meta, usado en B2B</li>
-        <li><span class="mono">fb_pixel_lead</span> — evento personalizado vía Pixel, usado en una landing aislada (FARLETE)</li>
-      </ul>
-      <p>No hay forma de tener un dashboard único de "leads reales totales" en Ads Manager. Cada evento se computa por separado. Para reportar al CEO el total real, alguien tiene que sumar manualmente y reconciliar. A escala, insostenible.</p>
-    </div>
-
-    <h3>Hallazgos medios</h3>
-
-    <div class="callout">
-      <span class="callout-label"><span class="sev medio">Medio</span> Hallazgo #7</span>
-      <h4>Naming convention: 6 estilos coexistiendo.</h4>
-      <p>Conviven en la cuenta:</p>
-      <ul>
-        <li><span class="mono">AON_PROS_B2C-VENDEDORES_ES_FORM</span></li>
-        <li><span class="mono">20260412_PROS_B2C-COMPRADORES_ES_FORM</span></li>
-        <li><span class="mono">B2B_LANDING pixel insertado(FARLETE)</span></li>
-        <li><span class="mono">B2C_B86138302_1_DON PISO_ABRIL26</span></li>
-        <li><span class="mono">Cosiris - Tráfico</span></li>
-        <li><span class="mono">B2C_TEST LEADS</span></li>
-      </ul>
-      <p>Mínimo 3-4 personas distintas han operado la cuenta sin un manual. Auditar y reportar a escala se vuelve doloroso. Refactor + documento de naming convention oficial = 1 día de trabajo.</p>
-    </div>
-
-    <div class="callout">
-      <span class="callout-label"><span class="sev medio">Medio</span> Hallazgo #8</span>
-      <h4>Las campañas Landing+Pixel se probaron y se abandonaron sin datos accesibles.</h4>
-      <p>En la cuenta hay <strong>cinco campañas con objetivo Tráfico/Landing</strong> — todas inactivas a día de hoy:</p>
-      <ul>
-        <li><span class="mono">Tráfico - Captación Inmobiliarias</span> · sin gasto</li>
-        <li><span class="mono">Cosiris - Tráfico</span> · sin gasto</li>
-        <li><span class="mono">B2B_Tráfico_Landing_Farlete</span> · sin gasto</li>
-        <li><span class="mono">B2C_Landing vendedores_Farlete</span> · sin gasto</li>
-        <li><span class="mono">B2B_LANDING pixel insertado(FARLETE)</span> · €34 / 1 lead / CPL €34 vía <span class="mono">fb_pixel_lead</span></li>
-      </ul>
-      <p>Es decir: la alternativa de landing propia + píxel server-side <strong>se ha intentado y se ha apagado</strong>. La pregunta clave no es "¿deberíais probarla?" sino "¿por qué la abandonasteis?". Las posibilidades:</p>
-      <ul>
-        <li><strong>Tactical</strong> — mala landing, mal píxel, mal CAPI, mal copy. Reabordable con buena ejecución.</li>
-        <li><strong>Estratégico</strong> — la calidad del lead landing era similar a Instant Form pero con más coste y complejidad. Decisión cerrada.</li>
-        <li><strong>Inercia</strong> — alguien lo lanzó, no funcionó al primer intento, y nadie volvió a tocarlo. Lo más común.</li>
-      </ul>
-      <p>El ~96% del spend activo va hoy a Instant Form (Lead Forms de Meta), que tiende a dar leads más baratos pero de peor calidad SQL. Sin saber por qué se abandonó la línea Landing, no se puede decidir si conviene retomarla. Quick win 8 propone recuperar ese contexto antes de cualquier nueva inversión en landing.</p>
-    </div>
-
-    <div class="callout">
-      <span class="callout-label"><span class="sev medio">Medio</span> Hallazgo #9</span>
-      <h4>8 campañas zombie pausadas/archivadas.</h4>
-      <p>Generan ruido visual en Ads Manager y consumen 1-2 minutos de cualquier auditoría futura. Algunas con histórico de gasto residual que sigue computándose en totales agregados. Limpiar bulk = 30 minutos.</p>
-    </div>
-  </div>
-</section>
-
-<!-- NÚMEROS -->
-<section id="numeros">
-  <div class="container">
-    <span class="section-num">04 — Análisis cuantitativo</span>
-    <h2>La cuenta<br>en <span class="hl">números</span>.</h2>
-    <p class="lead">Resumen ejecutivo de las métricas clave por campaña activa o relevante, con interpretación. Para el detalle completo se acompaña el export raw.</p>
-
+    <h3>Las 2 campañas vuestras · captación de inmobiliarias para SaaS</h3>
     <table class="data-table">
       <thead>
         <tr>
@@ -702,240 +471,172 @@
           <th class="num">Spend</th>
           <th class="num">Leads</th>
           <th class="num">CPL</th>
-          <th class="num">Reach</th>
-          <th class="num">Freq</th>
           <th>Estado</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td><strong>AON_PROS_B2C-VENDEDORES</strong></td>
-          <td class="num">€10.475</td>
-          <td class="num">538</td>
-          <td class="num">€19,47</td>
-          <td class="num">509k</td>
-          <td class="num">2,62</td>
-          <td class="good">✓ activa</td>
-        </tr>
-        <tr>
-          <td><strong>AON_PROS_B2B-COSIRIS</strong></td>
+          <td><strong>AON_PROS_B2B-COSIRIS_ES_FORM</strong> · captación fría</td>
           <td class="num">€3.994</td>
           <td class="num">279</td>
           <td class="num">€14,32</td>
-          <td class="num">58k</td>
-          <td class="num bad">4,44</td>
-          <td class="warn">⚠ saturando</td>
+          <td class="good">✓ activa</td>
         </tr>
         <tr>
-          <td><strong>AON_RTG_B2B-COSIRIS</strong></td>
+          <td><strong>AON_RTG_B2B-COSIRIS_ES</strong> · retargeting</td>
           <td class="num">€144</td>
           <td class="num">4</td>
-          <td class="num bad">€36,12</td>
-          <td class="num">4k</td>
-          <td class="num">1,63</td>
-          <td class="bad">⚠ envenenado</td>
+          <td class="num">€16,78<sup>*</sup></td>
+          <td class="good">✓ activa</td>
         </tr>
         <tr>
-          <td><strong>B2C_TEST LEADS</strong></td>
-          <td class="num">€532</td>
-          <td class="num">13</td>
-          <td class="num bad">€40,91</td>
-          <td class="num">45k</td>
-          <td class="num">1,64</td>
-          <td class="bad">✗ pausar</td>
-        </tr>
-        <tr>
-          <td><strong>B2C_COMPRADORES</strong> (parada)</td>
-          <td class="num">€38</td>
-          <td class="num">11</td>
-          <td class="num good">€3,46</td>
-          <td class="num">5k</td>
-          <td class="num">2,06</td>
-          <td class="warn">⚠ desbloquear</td>
-        </tr>
-        <tr>
-          <td><strong>B2C_ARRENDADORES</strong></td>
-          <td class="num">€123</td>
-          <td class="num">11</td>
-          <td class="num">€11,16</td>
-          <td class="num">6k</td>
-          <td class="num">1,55</td>
-          <td>○ inactiva</td>
-        </tr>
-        <tr>
-          <td><strong>B2C_BEST HOUSE</strong> (cliente)</td>
-          <td class="num">€170</td>
-          <td class="num">8</td>
-          <td class="num">€21,25</td>
-          <td class="num">10k</td>
-          <td class="num">1,48</td>
-          <td>○ inactiva</td>
+          <td><strong>Total Cosiris own</strong></td>
+          <td class="num"><strong>€4.138</strong></td>
+          <td class="num"><strong>283</strong></td>
+          <td class="num"><strong>€14,62</strong></td>
+          <td class="good">ROAS 2× sobre primer pago</td>
         </tr>
       </tbody>
     </table>
+    <p class="small"><sup>*</sup> El CPL real del adset Form del RTG B2B (€16,78) — el €36 que aparece a nivel campaña incluye un adset Web nuevo lanzado el 24-abr aún sin conversiones, dilución estadística, no problema real.</p>
 
-    <h3>Lecturas clave</h3>
+    <h3>Las 30+ campañas de vuestros clientes · captación de exclusivas y compradores</h3>
+    <p>Todo el resto del spend (€11.400, ~73%) corresponde a campañas que vosotros gestionáis para inmobiliarias clientes — capturando para ellos exclusivas (vendedores) y, en algunos casos, compradores y arrendadores. Cada cliente tiene su propio adset (60+ adsets nombrados con NIF + marca + ciudad), todos viviendo en vuestra cuenta publicitaria y compartiendo vuestro píxel:</p>
     <ul>
-      <li><strong>CPL medio cuenta: €17,94</strong> (€15.538 / 866 leads). Métrica engañosa porque mezcla 3 eventos distintos y 5 audiencias — no comparable con benchmark de un solo avatar.</li>
-      <li><strong>2 CPLs disparados</strong> por encima del CPL frío principal (TEST €40,91 · RTG B2B €36,12). Ambos son síntomas del píxel contaminado, no problemas independientes.</li>
-      <li><strong>1 CPL espectacular parado</strong> (B2C Compradores €3,46). Quick win obvio.</li>
-      <li><strong>B2B Cosiris saturándose</strong> (freq 4,44 con pool 58k). Necesita ampliación de audiencia urgente o el CPL se deteriora en 30-45 días.</li>
-      <li><strong>Distribución 67% B2C / 26% B2B core</strong>. Decisión que necesita justificación de negocio explícita.</li>
+      <li><strong>Bestseller activos</strong>: B70552989_DECASA SANTIAGO, B72828304_ALFA 4 VIENTOS, B95676656_WE WORK WELL, B70734116_INMOGESTIÓN, B56712672_GERMANS NABAU, B43524149_FINQUES FARNÓS y otros 25-30 más.</li>
+      <li><strong>Plantillas creativas reutilizadas</strong>: <span class="mono">VALORA TU VIVIENDA</span> (33 ads), <span class="mono">TE GUSTARIA VENDER</span> (23), <span class="mono">COMPRAMOSCARTEL7DIAS</span> (9). Tiene sentido en un modelo white-label, pero la frecuencia con que se usan empieza a saturar a Meta (varios ads marcados Below Average por algoritmo, no por business outcome).</li>
+      <li><strong>Adsets "Intereses_Geo"</strong> (Madrid, Tarragona-Zaragoza-Barcelona, España) con creativo Elias — generan el grueso del volumen, ~135 leads de los activos. Probablemente alimentan el motor central de captación que luego distribuye a clientes.</li>
+      <li><strong>ROAS desconocido</strong>: cada cliente tiene su propio funnel desde lead → cliente → operación cerrada, y vosotros no medís esa métrica de su lado. Es asunto del cliente — pero define si el coste/lead que les entregáis es bueno o no.</li>
     </ul>
 
-    <p class="small"><em>Las métricas anteriores son las extraídas del export estándar de Ads Manager. Una auditoría profunda requiere acceso al BM para verificar: configuración del píxel y datasets, estado CAPI, EMQ score por evento, calidad real de los leads vía CRM, atribución cross-platform, y consistencia de eventos disparados.</em></p>
+    <div class="callout">
+      <span class="callout-label">El matiz que importa</span>
+      <h4>Esto no es "tenéis 30 clientes en una cuenta porque sí". Es "Cosiris hace de agencia operativa para sus clientes SaaS sin la infraestructura de agencia".</h4>
+      <p>El SaaS vendría a ser la promesa. La operativa Meta Ads para esas inmobiliarias es el cómo se entrega. Pero al hacerlo dentro de vuestra cuenta y bajo vuestro píxel, estáis cargando con todo el riesgo operativo y legal de una agencia, sin la separación que protege a una agencia: cuentas separadas por cliente, BMs propios del cliente, billing limpio, propiedad de datos clara.</p>
+      <p>La discusión central de esta auditoría es esa, no las métricas de cada campaña.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PULL QUOTE -->
+<div class="container">
+  <div class="pull">
+    <p>30 clientes,<br>una cuenta,<br>un píxel <span class="hl">para todo</span>.</p>
+  </div>
+</div>
+
+<!-- HALLAZGOS -->
+<section id="hallazgos">
+  <div class="container">
+    <span class="section-num">03 — Hallazgos críticos</span>
+    <h2>Cuatro <span class="hl">hallazgos</span><br>por orden de severidad.</h2>
+    <p class="lead">Solo lo crítico. Hay más cosas por afinar (eventos de conversión, attribution settings, frecuencia, calidad de creativos), pero ninguna es bloqueante mientras los cuatro siguientes no se resuelvan.</p>
+
+    <div class="callout alert">
+      <span class="callout-label"><span class="sev">Crítico</span> Hallazgo #1</span>
+      <h4>Píxel único entre dos buyer personas radicalmente distintos.</h4>
+      <p>El mismo píxel está aprendiendo de dos públicos que no se parecen en nada:</p>
+      <ul>
+        <li><strong>Cosiris own</strong>: CEOs y gerentes de inmobiliarias en España. Decisión racional, ciclo largo, intent profesional, lenguaje técnico SaaS.</li>
+        <li><strong>Clientes white-label</strong>: propietarios que quieren vender su casa, compradores buscando piso, arrendatarios. Decisión emocional, ciclo corto-medio, intent personal, lenguaje cotidiano.</li>
+      </ul>
+      <p>Resultado: un modelo predictivo que promedia los dos. Lookalikes contaminadas, RTG B2B que captura ruido B2C, y una capacidad de escalar vuestras campañas B2B limitada porque la señal está ensuciada.</p>
+      <p><strong>Solución:</strong> dos píxeles. Uno B2B propio para Cosiris. Otro B2C compartido entre todas las inmobiliarias clientes (porque ahí sí comparten buyer persona — la jugada de plataforma vertical es correcta).</p>
+    </div>
+
+    <div class="callout alert">
+      <span class="callout-label"><span class="sev">Crítico</span> Hallazgo #2</span>
+      <h4>30+ cuentas-cliente operando dentro de vuestra cuenta publicitaria.</h4>
+      <p>El riesgo no es performance, es estructural. Cuatro caras del mismo problema:</p>
+      <ul>
+        <li><strong>Riesgo de baneo concentrado</strong>: si Meta restringe vuestra cuenta por una creatividad agresiva de un cliente, los 30 clientes paran a la vez.</li>
+        <li><strong>Propiedad de datos confusa</strong>: cuando un cliente se va, el píxel y su histórico están en vuestra cuenta. No le podéis dar lo que es suyo limpiamente, y RGPD lo mira con lupa.</li>
+        <li><strong>Billing y trazabilidad imposibles</strong>: facturar a cada inmobiliaria por su gasto real exige malabarismos manuales con etiquetas y reportes que no cuadran nunca al céntimo.</li>
+        <li><strong>Conflicto de interés latente</strong>: si dos inmobiliarias compiten en la misma zona, sus audiencias custom y RTG se cruzan en vuestro píxel.</li>
+      </ul>
+      <p><strong>Solución:</strong> cada inmobiliaria, su propio Business Manager y su propia cuenta publicitaria. Cosiris entra como Partner del BM del cliente. El píxel B2C compartido se gestiona desde una cuenta matriz Cosiris (o un BM partner), pero el spend, billing y propiedad va a la cuenta del cliente.</p>
+    </div>
+
+    <div class="callout warn">
+      <span class="callout-label"><span class="sev alto">Alto</span> Hallazgo #3</span>
+      <h4>Account hygiene a escala industrial.</h4>
+      <p>671 ads totales en la cuenta. 127 activos. <mark>El resto, 544 (81%), está en estado pausado, no_delivering o archivado.</mark> Conviven 6 convenciones de naming distintas (<span class="mono">AON_PROS_B2C-...</span> · <span class="mono">20260412_PROS_...</span> · <span class="mono">B2B_LANDING pixel insertado(FARLETE)</span> · <span class="mono">B86138302_1_DON PISO_ABRIL26</span> · <span class="mono">Cosiris - Tráfico</span> · <span class="mono">B2C_TEST LEADS</span>).</p>
+      <p>A 1-2 inmobiliarias clientes esto no se nota. A 30 clientes ya está al borde del techo. A 60 clientes (escenario realista de crecimiento), auditar la cuenta o generar reportes mensuales por cliente se vuelve físicamente imposible sin un manual operativo.</p>
+      <p><strong>Solución:</strong> archivado bulk del cementerio (30 minutos), naming convention oficial documentada (2 horas), y un proceso de cierre de campañas que evite que se acumulen zombies a futuro.</p>
+    </div>
+
+    <div class="callout warn">
+      <span class="callout-label"><span class="sev alto">Alto</span> Hallazgo #4</span>
+      <h4>Tracking de calidad de lead inexistente entre Cosiris y cliente.</h4>
+      <p>Sabéis lo que cuesta un lead (€14-30 según adset) pero no sabéis qué porcentaje de esos leads la inmobiliaria cliente convierte a operación cerrada. Sin esa métrica, no podéis:</p>
+      <ul>
+        <li>Defender vuestro precio frente a un cliente que se queja.</li>
+        <li>Identificar qué creativos / audiencias / ciudades dan leads más calientes (no solo más baratos).</li>
+        <li>Aprender de las inmobiliarias que SÍ convierten bien (Inmogestión, Germans Nabau, Finques Farnós tienen CPLs entre €3 y €7) vs las que no (Comangau €113, Tecnopisos €33).</li>
+        <li>Justificar la diferencia entre un lead Instant Form y un lead Landing+Pixel — que probablemente convierten de forma muy distinta a nivel SQL.</li>
+      </ul>
+      <p><strong>Solución:</strong> cada cliente debería reportaros (al menos mensualmente) su tasa de cualificación SQL → operación cerrada → ingreso. Idealmente vía CRM compartido o webhook al píxel/CAPI con eventos de conversión avanzada. Sin esto, optimizáis a ciegas.</p>
+    </div>
   </div>
 </section>
 
 <!-- QUICK WINS -->
 <section id="quickwins">
   <div class="container">
-    <span class="section-num">05 — Acción inmediata</span>
-    <h2>Quick wins<br><span class="hl">esta semana</span>, sin migrar.</h2>
-    <p class="lead">Cosas accionables ya por el equipo interno, sin esperar a la migración estructural. Ninguna depende de la otra. Coste estimado total: 2-3 días de trabajo de un media buyer senior.</p>
+    <span class="section-num">04 — Acción inmediata</span>
+    <h2>Quick wins<br><span class="hl">esta semana</span>.</h2>
+    <p class="lead">Sin tocar la arquitectura. Cinco cosas que el equipo interno puede ejecutar ya, en paralelo a cualquier decisión sobre la migración estructural.</p>
 
     <ol class="numbered">
-      <li><strong>Investigar y desbloquear B2C Compradores.</strong> Estado <span class="mono">not_delivering</span> con CPL €3,46. Identificar causa (presupuesto, creativo rechazado por política, problema de píxel, restricción de targeting) y resolver.</li>
-      <li><strong>Pausar B2C TEST LEADS.</strong> €40,91 CPL durante 30 días no es un test, es una decisión que ya se tomó. Cerrarla y reasignar el €532 mensual.</li>
-      <li><strong>Refrescar 3-5 creativos B2B.</strong> La frecuencia 4,44 dice que el creativo actual está agotándose. Lanzar variantes nuevas antes que el CPL empiece a deteriorarse.</li>
-      <li><strong>Auditoría exprés del Events Manager.</strong> Verificar: ¿qué eventos están registrados en cada dataset? ¿EMQ score por evento? ¿CAPI activo? ¿Doble disparo de píxel? ¿Dominio verificado para iOS 14.5+?</li>
-      <li><strong>Consolidar evento "Lead" único en cada funnel.</strong> Eliminar la coexistencia de <span class="mono">leadgen.other</span> + <span class="mono">lead</span> + <span class="mono">fb_pixel_lead</span> y unificar a un evento por avatar.</li>
-      <li><strong>Limpiar las 8 campañas zombie.</strong> Archivado bulk de pausadas e inactivas con cero gasto reciente. 30 minutos.</li>
-      <li><strong>Ampliar audiencia B2B Cosiris.</strong> Lookalike 1% sobre clientes activos del SaaS, interest expansion ON, ampliar geo y rango de edad para refrescar la pool antes que la frecuencia 4,44 se vuelva 6+.</li>
-      <li><strong>Recuperar contexto del abandono de Landing+Pixel.</strong> En la cuenta hay 5 campañas Landing/Tráfico inactivas (la única con datos: <span class="mono">B2B_LANDING pixel insertado(FARLETE)</span> con CPL €34 sobre 1 sola conversión). Antes de retomar la línea, hablar con quien las apagó: ¿fue mala landing/píxel/CAPI (tactical → reabordable) o calidad de lead equivalente con más coste (estratégico → respetar)? Solo si fue tactical, relanzar con landing nueva en 20% del presupuesto B2B durante 2 semanas, midiendo cualidad SQL en CRM y no solo CPL en Ads Manager.</li>
+      <li><strong>Limpiar el cementerio.</strong> Archivado bulk de los 544 ads pausados/no_delivering. 30 minutos. Resultado inmediato: Ads Manager ligero y reportes futuros más rápidos.</li>
+      <li><strong>Documentar la naming convention oficial.</strong> Una hoja con el patrón "qué es vuestro" vs "qué es del cliente", cómo se nombran campañas/adsets/ads, y prefijos por estado (TEST, OFF, EXP). 2 horas. Beneficio: las próximas 20 inmobiliarias entran ya con orden.</li>
+      <li><strong>Dejar correr el test Form vs Web.</strong> Lanzasteis el 24-abr (Madrid_web va €12 CPL vs Form €14 CPL — buena señal preliminar pero N=7). Resistir la tentación de matarlo o decidir antes de tener N=30+ por adset. Decisión informada en 2-3 semanas.</li>
+      <li><strong>Mapear las inmobiliarias top y bottom.</strong> Sin entrar en detalle (eso es trabajo de fase pagada): los outliers buenos (Inmogestión, Germans Nabau, Finques Farnós a CPL €3-7) y malos (Comangau €113, Tecnopisos €33) merecen una conversación de 20 minutos cada uno. Por qué uno funciona y el otro no, suele estar en creativo + landing + targeting más que en la cuenta.</li>
+      <li><strong>Auditoría exprés del Events Manager.</strong> Verificar: ¿cuántos píxeles/datasets tenéis configurados realmente? ¿EMQ score de los eventos clave? ¿CAPI activo? ¿Doble disparo? Esto es el preámbulo necesario antes de tocar la separación de píxeles del Hallazgo #1.</li>
     </ol>
-
-    <div class="callout">
-      <span class="callout-label">Prioridad si solo se hacen 4</span>
-      <h4>Por orden: 1, 2, 4, 7.</h4>
-      <p>Desbloquear Compradores (1), pausar TEST (2), auditoría Events Manager (4) y ampliar audiencia B2B (7) mueven la aguja inmediatamente sin tocar arquitectura. Si después de la auditoría exprés salen sorpresas — píxel duplicado, CAPI sin EMQ, eventos no documentados — replantear antes de empezar el plan de migración.</p>
-    </div>
-  </div>
-</section>
-
-<!-- PLAN DE MIGRACIÓN -->
-<section id="plan">
-  <div class="container">
-    <span class="section-num">06 — Plan de migración</span>
-    <h2>Arquitectura nueva<br>en <span class="hl">8 semanas</span>.</h2>
-    <p class="lead">Fases en orden estricto. Saltar pasos rompe la lógica. Lo realista son 8 semanas asumiendo el coste inicial de aprendizaje del píxel como parte del proceso, no como problema.</p>
-
-    <div class="callout warn">
-      <span class="callout-label">Aviso clave</span>
-      <h4>Las primeras 2 semanas tras la migración los CPLs van a SUBIR. Es normal.</h4>
-      <p>Cuando se separan píxeles, cada uno arranca con histórico cero y tiene que aprender desde cero. Período de aprendizaje típico: 14-21 días por píxel. <strong>Asumirlo de antemano y comunicarlo internamente</strong> evita que la migración se cancele a mitad del proceso por mala lectura de KPIs cortoplacistas.</p>
-    </div>
-
-    <div class="timeline">
-      <div class="timeline-item">
-        <h5>Fase 1 · Auditoría completa</h5>
-        <div class="meta">Semana 1 · documentar el "antes"</div>
-        <p>Inventario de píxeles, datasets, eventos, dominios verificados, estado CAPI por funnel. Mapeo BM y permisos actuales. Documento "estado actual" para tener trazabilidad de la migración.</p>
-      </div>
-
-      <div class="timeline-item">
-        <h5>Fase 2 · Diseño nueva arquitectura</h5>
-        <div class="meta">Semana 2 · sobre papel antes de tocar nada</div>
-        <p>Definir 4 píxeles (B2B Cosiris / B2C Vendedores / B2C Compradores / B2C Arrendadores), estructura de cuentas publicitarias (Cosiris BM matriz + cada inmobiliaria cliente con su BM/cuenta), naming convention oficial documentada, eventos de conversión únicos por funnel.</p>
-      </div>
-
-      <div class="timeline-item">
-        <h5>Fase 3 · Migración B2B Cosiris</h5>
-        <div class="meta">Semanas 3-4 · CPL inflado temporalmente</div>
-        <p>Píxel B2B en dominio Cosiris.com (o subdominio dedicado). Cuenta publicitaria B2B propia. Apagar campañas B2B antiguas, lanzar nuevas en cuenta limpia. Aprendizaje del nuevo píxel: 2 semanas.</p>
-      </div>
-
-      <div class="timeline-item">
-        <h5>Fase 4 · Migración B2C Vendedores</h5>
-        <div class="meta">Semanas 4-5 · estructura multi-cliente</div>
-        <p>Píxel B2C compartido en dominio servicio Cosiris. Cuenta publicitaria por inmobiliaria cliente (Don Piso, Best House, Farlete, Alfa Urban) con su billing y su acceso. Píxel compartido entre todas las cuentas para acumular señal del avatar común.</p>
-      </div>
-
-      <div class="timeline-item">
-        <h5>Fase 5 · Compradores y Arrendadores</h5>
-        <div class="meta">Semana 6 · pilotos pequeños</div>
-        <p>Píxeles propios para cada uno. Si el volumen no justifica cuentas separadas, mantenerlos en una cuenta consolidada con dos píxeles distintos hasta validar tracción. Decisión basada en datos, no a priori.</p>
-      </div>
-
-      <div class="timeline-item">
-        <h5>Fase 6 · Test landing+pixel vs Lead Form</h5>
-        <div class="meta">Semanas 7-8 · cualidad sobre cantidad</div>
-        <p>Comparar calidad de lead en CRM, no solo CPL en Ads Manager. Decidir mix definitivo Instant Form vs Landing+Pixel para cada funnel según cualificación SQL real.</p>
-      </div>
-
-      <div class="timeline-item">
-        <h5>Fase 7 · Tracking + iteración</h5>
-        <div class="meta">Continuo · post-migración</div>
-        <p>Dashboard único con eventos consolidados. Position tracking semanal. Audit mensual de drift de naming, eventos nuevos sin documentar, frecuencias en zona de saturación. Manual operativo vivo.</p>
-      </div>
-    </div>
-
-    <div class="callout green">
-      <span class="callout-label">Expectativa realista</span>
-      <h4>Qué esperar y cuándo.</h4>
-      <p><strong>Mes 1</strong> (migración + aprendizaje): CPL inflado 20-40% temporalmente. Es coste de migración, no fracaso. Comunicarlo en advance al equipo.</p>
-      <p><strong>Mes 2</strong> (estabilización): CPL volviendo al baseline o ligeramente por debajo. Píxeles aprendiendo correctamente.</p>
-      <p><strong>Mes 3+</strong> (escalado limpio): CPL bajando entre 15-30% respecto al baseline actual gracias a píxeles limpios y RTG funcional. Capacidad de escalar presupuesto sin romper la arquitectura.</p>
-      <p><strong>Beneficio no cuantificable pero real</strong>: capacidad de reportar al CEO la realidad de cada funnel sin malabarismos manuales, propiedad de datos limpia por cliente, y una cuenta defendible ante auditoría externa o due diligence.</p>
-      <p class="small" style="margin-top: 16px;"><em>Estimaciones basadas en los datos del periodo y benchmarks de migraciones similares en cuentas mid-market españolas. No son una garantía.</em></p>
-    </div>
   </div>
 </section>
 
 <!-- PRÓXIMOS PASOS -->
 <section id="proximo">
   <div class="container">
-    <span class="section-num">07 — Próximos pasos</span>
-    <h2>Lo que <span class="hl">necesito</span> de vosotros.</h2>
-    <p class="lead">Cinco preguntas para responder antes de la siguiente reunión. Determinan si hace falta una propuesta de gestión continuada o basta con la auditoría puntual + handoff al equipo interno.</p>
+    <span class="section-num">05 — Próximos pasos</span>
+    <h2>Hasta aquí <span class="hl">la inicial</span>.</h2>
+    <p class="lead">Esto es una auditoría pre-venta de un solo vistazo: identificar el problema estructural y los quick wins. No incluye análisis profundo por inmobiliaria, plan de migración detallado, ni propuesta de gestión continuada — eso es trabajo de fase posterior.</p>
+
+    <h3>Lo que hace falta para avanzar</h3>
+    <p>Si os encaja seguir, hay tres preguntas que necesito responder con datos antes de poder estimar bien una propuesta:</p>
 
     <div class="question">
       <span class="question-num">Pregunta 01</span>
-      <h4>LTV y margen real comparado: B2B vs B2C-servicio.</h4>
-      <p>¿Cuánto margen recurrente deja un cliente B2B (inmobiliaria que contrata el SaaS) vs cuánto margen deja un lead B2C servido a una inmobiliaria cliente? Esta cifra determina si la inversión 67/26 actual está bien o invertida.</p>
+      <h4>¿Qué saben las inmobiliarias clientes de cómo está montado esto?</h4>
+      <p>¿Saben que sus campañas viven en vuestra cuenta publicitaria? ¿Saben que comparten píxel con el resto de inmobiliarias clientes y con vuestro funnel B2B? ¿Tienen acceso a su propio reporting o reciben uno que vosotros generáis? Esto define la urgencia del hallazgo #2 — si lo desconocen, hay riesgo reputacional cuando se enteren.</p>
     </div>
 
     <div class="question">
       <span class="question-num">Pregunta 02</span>
-      <h4>Inmobiliarias clientes activas y su gestión.</h4>
-      <p>¿Cuántas inmobiliarias clientes tenéis activas y qué % de su lead-gen pasa por la cuenta publicitaria de Cosiris vs gestionan ellas mismas con sus propias cuentas?</p>
+      <h4>¿Cuál es el modelo de facturación a las inmobiliarias?</h4>
+      <p>¿Cobráis fee fijo + spend pasado a coste? ¿Fee + % de spend? ¿Por lead entregado? ¿Solo por SaaS y los Ads son cortesía? Esto define qué tan operacionalmente fácil es migrar a cuentas separadas — algunos modelos lo hacen trivial, otros requieren rediseño contractual.</p>
     </div>
 
     <div class="question">
       <span class="question-num">Pregunta 03</span>
-      <h4>Business Manager de cada inmobiliaria.</h4>
-      <p>¿Las inmobiliarias clientes tienen ya su propio Business Manager? Si no, ¿están en condiciones de crearlo (acceso a Facebook personal del responsable, dominio del cliente con DNS controlado, contacto con autoridad para dar permisos)?</p>
-    </div>
-
-    <div class="question">
-      <span class="question-num">Pregunta 04</span>
-      <h4>Tracking lead → cliente real.</h4>
-      <p>¿Hay un CRM conectado al pixel/CAPI? ¿Se cualifican los leads y se reporta SQL/MQL a la inmobiliaria cliente? ¿Cómo medís hoy la calidad real de un lead Lead Form vs un lead Landing+Pixel?</p>
-    </div>
-
-    <div class="question">
-      <span class="question-num">Pregunta 05</span>
-      <h4>Modelo de facturación con inmobiliarias.</h4>
-      <p>¿Cobráis a las inmobiliarias por leads entregados, por gestión + spend, por % de spend, o por fee fijo? Esto condiciona si las cuentas publicitarias separadas son operacionalmente fáciles o requieren cambio de billing/contratación.</p>
+      <h4>¿Cuál es el plan de crecimiento a 12 meses?</h4>
+      <p>Si vais de 30 a 50 clientes en 12 meses, la migración estructural es urgente — el techo operativo se nota antes. Si vais de 30 a 35, hay margen para hacerlo paulatinamente. La urgencia depende del crecimiento esperado, no del estado actual.</p>
     </div>
 
     <h3>Mientras tanto</h3>
-    <p>Los <strong>8 quick wins</strong> de la sección 5 son ejecutables ya por vuestro equipo interno sin esperar a una propuesta. Recomiendo arrancar por los cuatro prioritarios (desbloquear Compradores, pausar TEST, auditoría Events Manager y ampliar audiencia B2B) — eso mueve la aguja a corto sin tocar arquitectura.</p>
-    <p>Si después de la auditoría Events Manager (quick win 4) salen sorpresas relevantes, replantemos antes de empezar Fase 1.</p>
-
-    <h3>Propuesta de gestión continuada</h3>
-    <p>Si os encaja, propongo gestionar yo personalmente la migración estructural completa (Fases 1 a 7) y dejar la operación diaria post-migración a vuestro equipo o a una agencia continua, con una primera ronda de handoff documentado. Alternativa: gestión continuada completa post-migración con SLAs definidos.</p>
-    <p>En la siguiente reunión planteamos las dos opciones con timeline y honorarios concretos. La decisión depende de las respuestas a las cinco preguntas anteriores.</p>
+    <p>Los <strong>5 quick wins</strong> de la sección anterior son ejecutables ya por vuestro equipo interno sin esperar a una propuesta. Recomiendo arrancar por (1) limpiar cementerio y (2) naming convention — son baratos, reversibles, y os dejan la cuenta en mejor estado para cualquier decisión futura.</p>
   </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
   <div class="container">
-    <h3>Documentación complementaria.</h3>
-    <p>Esta auditoría va acompañada del export raw del periodo (CSV con 18 filas de campañas) y, si se conceden permisos de auditor, un screencast del Business Manager con los hallazgos verificados en la propia interfaz de Ads Manager y Events Manager.</p>
-    <p>Para profundizar en cualquier hallazgo, hablamos.</p>
-    <div class="signature">Josep Cid · 28 abril 2026 · v1 auditoría inicial</div>
+    <h3>Hasta aquí la inicial.</h3>
+    <p>Esta auditoría se basa en exports campaign + adset + ad-level de los últimos 30 días (29 mar – 27 abr 2026). Suficiente para diagnóstico estructural, no para análisis fino por cliente — eso requiere acceso al BM y al CRM de cada inmobiliaria.</p>
+    <p>Para profundizar en cualquier hallazgo, plantear migración estructural, o discutir gestión continuada, hablamos.</p>
+    <div class="signature">Josep Cid · 28 abril 2026 · v2 auditoría inicial</div>
   </div>
 </footer>
 
